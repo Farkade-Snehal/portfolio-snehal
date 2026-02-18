@@ -7,6 +7,7 @@ import path from "path"
 //
 export default defineConfig({
   plugins: [react(), tailwindcss() ],
+  base:process.env.VITE_BASE_PATH || "/portfolio-snehal"
   resolve:{
     alias:{
       "@":path.resolve(__dirname , "./src"),
