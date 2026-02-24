@@ -169,4 +169,17 @@ box-shadow:0 0 10px 5px rgba(255,255,255,0.3)
   text-align: center;
 } 
 
+/* img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+} */
+ /* Default (Desktop) style */
+.container { display: flex; }
 
+/* Mobile override */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
